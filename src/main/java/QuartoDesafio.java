@@ -9,7 +9,6 @@ public class QuartoDesafio {
         try {
             Scanner scanner = new Scanner(System.in);
             int numeroFrases = scanner.nextInt();
-            imprime(numeroFrases);
             List<String> listaFrases = new ArrayList<>();
             for (int posicao = 0; posicao <= numeroFrases; posicao += 1) {
                 String frase = scanner.nextLine();
@@ -21,7 +20,6 @@ public class QuartoDesafio {
                 listaFrases.add(frase);
             }
             listaFrases.remove(0);
-            imprime(listaFrases);
             List<String> frasesInvertidas = new ArrayList<>();
             for (String listaFrase : listaFrases) {
                 verificaTamanhoFrase(listaFrase);
@@ -33,7 +31,6 @@ public class QuartoDesafio {
                 String novaFrase = "" + fraseInvertidaUm + fraseInvertidaDois + "";
                 frasesInvertidas.add(novaFrase);
             }
-            imprime(frasesInvertidas);
             for (String fraseInvertida : frasesInvertidas) {
                 imprime(fraseInvertida);
             }
